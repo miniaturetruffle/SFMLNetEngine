@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SFMLNetEngine", "SFMLNetEngine.csproj", "{EAFA2640-24ED-4336-8426-769A0C747DEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFA2640-24ED-4336-8426-769A0C747DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFA2640-24ED-4336-8426-769A0C747DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFA2640-24ED-4336-8426-769A0C747DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFA2640-24ED-4336-8426-769A0C747DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E47C09A3-19B4-4E5E-BA70-D1949CF93069}
+	EndGlobalSection
+EndGlobal
