@@ -29,7 +29,7 @@ namespace SFMLNetEngine.Engine.Components
 
         public override void Update()
         {
-            if (transform != null)
+            if (transform != null && attached != null)
             {
                 transform.Position = attached.position;
                 transform.Scale = attached.scale;

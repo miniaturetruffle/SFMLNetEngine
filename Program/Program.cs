@@ -21,6 +21,7 @@ namespace Program
         {
             GameObject obj = new GameObject("main_object");
             obj.AddComponent(new Rectangle(new Vector2f(200, 200)));
+            obj.position = new Vector2f(50, 50);
 
 
             main = new World(new GameObject[] {obj}, "Main");

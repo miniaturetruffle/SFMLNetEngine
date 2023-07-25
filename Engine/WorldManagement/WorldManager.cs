@@ -9,13 +9,17 @@ namespace SFMLNetEngine.Engine.WorldManagement
 {
     public static class WorldManager
     {
-        public static World[] worlds;
+        public static World[] worlds = new World[1];
 
         public static int worldIndex;
+
+        public static World currentWorld = worlds[worldIndex];
 
         public static void Construct(World[] worldsToSet)
         {
             worlds = worldsToSet;
+
+            currentWorld = worlds[worldIndex];
         }
 
         public static void RenderCurrent(in RenderWindow window)
@@ -32,6 +36,8 @@ namespace SFMLNetEngine.Engine.WorldManagement
                     worldIndex = i;
                 }
             }
+
+            currentWorld = worlds[worldIndex];
         }
     }
 }

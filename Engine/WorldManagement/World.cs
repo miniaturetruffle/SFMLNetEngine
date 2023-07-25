@@ -27,6 +27,14 @@ namespace SFMLNetEngine.Engine.WorldManagement
             }
         }
 
+        public void Update()
+        {
+            for (int i = 0; i < objects.Length; i++)
+            {
+                objects[i].Update();
+            }
+        }
+
         public void Render(in RenderWindow window)
         {
             for (int i = 0; i < entities.Count; i++)

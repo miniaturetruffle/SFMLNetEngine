@@ -11,10 +11,10 @@ namespace SFMLNetEngine.Engine
     public class GameObject
     {
 
-        public readonly Vector2f position, scale;
-        public readonly float rotation;
+        public Vector2f position, scale;
+        public float rotation;
 
-        public readonly List<Component> components;
+        private readonly List<Component> components;
 
         public string name;
 
@@ -52,9 +52,16 @@ namespace SFMLNetEngine.Engine
             }
         }
 
+        public void RemoveComponent(Component toRemove)
+        {
+            components.Remove(toRemove);
+            toRemove.SetAttached(null);
+        }
+
         public void AddComponent(Component toAdd)
         {
             components.Add(toAdd);
+            toAdd.SetAttached(this);
         }
         public T GetComponent<T>() where T : Component
         {

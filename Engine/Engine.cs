@@ -30,6 +30,7 @@ namespace SFMLNetEngine.Engine
                 window.Clear();
                 window.DispatchEvents();
                 Program.Program.Draw(in window);
+                WorldManager.currentWorld.Update();
                 WorldManager.RenderCurrent(in window);
                 window.Display();
                 Program.Program.PostDraw();

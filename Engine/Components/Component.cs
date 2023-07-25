@@ -8,13 +8,21 @@ namespace SFMLNetEngine.Engine.Components
 {
     public abstract class Component
     {
-        public GameObject attached { get; private set; }
+        public GameObject? attached { get; private set; }
         
         public void Assign(GameObject toAttach)
         {
-            attached.components.Remove(this);
-            toAttach.components.Add(this);
+            if (attached != null)
+            {
+                attached.RemoveComponent(this);
+            }
+            toAttach.AddComponent(this);
+            attached = toAttach;
+            
+        }
 
+        public void SetAttached(GameObject? toAttach)
+        {
             attached = toAttach;
         }
 
