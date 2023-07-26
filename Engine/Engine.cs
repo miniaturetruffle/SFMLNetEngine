@@ -17,7 +17,7 @@ namespace SFMLNetEngine.Engine
     {
         public static void Main()
         {
-            RenderWindow window = new RenderWindow(new VideoMode(Program.Program.WINDOW_SIZE.X, Program.Program.WINDOW_SIZE.Y), Program.Program.PROGRAM_TITLE);
+            RenderWindow window = new RenderWindow(new VideoMode(Program.Program.WINDOW_SIZE.X, Program.Program.WINDOW_SIZE.Y), Program.Program.PROGRAM_TITLE, Program.Program.VIDEO_STYLE);
             window.RequestFocus();
             window.Closed += Window_Closed;
 

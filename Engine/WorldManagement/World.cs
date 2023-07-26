@@ -27,6 +27,19 @@ namespace SFMLNetEngine.Engine.WorldManagement
             }
         }
 
+        public GameObject? Find(string name)
+        {
+            for(int i = 0; i < objects.Length; i++)
+            {
+                if (objects[i].name == name)
+                {
+                    return objects[i];
+                }
+            }
+
+            return null;
+        }
+
         public void Update()
         {
             for (int i = 0; i < objects.Length; i++)
